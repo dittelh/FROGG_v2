@@ -1,3 +1,145 @@
+.newsletter-section{
+    display: none;
+    background-color: var(--lightpink);
+    position: fixed;
+    z-index: 12;
+    margin-top: 10vw;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+    animation: fadeInNewsletter .4s;
+}
+
+@keyframes fadeInNewsletter {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInPurple {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: .6;
+    }
+}
+
+.kryds{
+    position: absolute;
+    right: 3vw;
+    margin-top: 3vw;
+}
+
+.newsletter-h2{
+    margin-top: 10vw;
+}
+
+.newsletter-p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.newsletter-form{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+.input{
+    border: var(--red) solid 1px;
+    color: var(--red);
+    width: 15rem;
+    margin-bottom: 5%;
+    font-family: Readex Pro;
+    padding: 5%;
+}
+
+.email-input{
+    height: 5vw;
+}
+
+.message-input{
+    height: 65vw;
+}
+
+::placeholder{
+    opacity: 50%;
+    color: var(--red);
+    font-family: Readex Pro;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.submit-btn{
+    border: none;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 145px;
+    height: 34px;
+    margin-bottom: 5%;
+}
+
+.newsletter-video{
+    width: 55vw;
+    display: flex;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    margin-top: -35%;
+}
+
+.transparent-purple-overlay{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--purple);
+    position: fixed;
+    z-index: 11;
+    opacity: 0.6;
+    top: 0;
+    animation: fadeInPurple .3s;
+
+}
+
+.newsletter-btn{
+    position: fixed;
+    top: 830px;
+    z-index: 9;
+    right: 0;
+    border-right: none;
+    border-color: var(--blue);
+}
+
+.hide-newsletter-btn{
+    display: none;
+}
+
+.show-this{
+    display: unset;
+}
+
+
+
+
+
+
+
+
 #first-billede{
     width: 60vw;
     height: auto;

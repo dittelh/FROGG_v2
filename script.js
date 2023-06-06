@@ -1,3 +1,24 @@
+if(localStorage.getItem("seenNewsletter") !== "Yes") {
+  setTimeout(toggleNewsletter, 1000)
+
+}
+
+function toggleNewsletter() {
+  var purpleBox = document.getElementById("transparent-purple-overlay")
+  var newsletterSection = document.getElementById("newsletter-section")
+  var newsletterBtn = document.getElementById("newsletter-btn")
+
+  purpleBox.classList.toggle("show-this")
+  newsletterSection.classList.toggle("show-this")
+  newsletterBtn.classList.toggle("hide-newsletter-btn")
+
+
+  localStorage.setItem("seenNewsletter", "Yes");
+}
+
+
+
+
 function openMenu() {
   // Fjerner eller tilføjer en class, ved at toggle
   var links = document.getElementById("navigation")
@@ -10,7 +31,7 @@ function openMenu() {
   }
 }
 
-function removeMenu(){
+function removeMenu() {
   var links = document.getElementById("navigation")
   var hamburger = document.getElementsByClassName("ham")[0]
   links.classList.remove("show-links")
