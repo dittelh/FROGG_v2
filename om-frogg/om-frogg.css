@@ -140,6 +140,84 @@
     padding-top: 5%;
 }
 
+/*Checkbox inspiration: https://getcssscan.com/css-checkboxes-examples d. 15/05 2023 - #32 by Dhavidy Luiz */
+
+.checkbox-wrapper {
+    --size: 25px;
+    --border-size: 2px;
+    position: relative;
+}
+
+.checkbox-wrapper *,
+.checkbox-wrapper *::after,
+.checkbox-wrapper *::before {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0;
+}
+
+.checkbox-wrapper input[type="checkbox"],
+.checkbox-wrapper label::before {
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkbox-wrapper label {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 calc(var(--size) + 7px);
+
+}
+
+.checkbox-wrapper label::before {
+    content: '';
+    background-color: var(--white);
+    border: 1px solid var(--red);
+}
+
+
+
+.checkbox-wrapper svg {
+    position: absolute;
+    top: calc(50% + var(--border-size));
+    /* left: var(--border-size); */
+    left: calc(0% + var(--border-size));
+    width: calc(var(--size) - (var(--border-size) * 2));
+    height: calc(var(--size) - (var(--border-size) * 2));
+    margin-top: calc(var(--size) / -2);
+    pointer-events: none;
+}
+
+.checkbox-wrapper svg path {
+    stroke-width: 0;
+    fill: none;
+    transition: stroke-dashoffset 0.2s ease-in 0s;
+}
+
+.checkbox-wrapper svg path + path {
+    transition: stroke-dashoffset 0.2s ease-out 0.2s;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked ~ svg path {
+    stroke-dashoffset: 0;
+    stroke-width: calc(var(--size) / 2);
+}
+
+
+
+
+
+
+
+
 .submit-btn{
     border: none;
     font-family: Roboto;
@@ -148,6 +226,7 @@
     text-transform: uppercase;
     width: 145px;
     height: 34px;
+    margin-top: 5%;
 }
 
 .mail-video{

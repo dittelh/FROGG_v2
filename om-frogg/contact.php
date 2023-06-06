@@ -4,8 +4,10 @@
  * 26-05-2022
  *  */ 
 
+$name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
+$newsletterCheckbox = $_POST['newsletter-checkbox'];
 
 $toEmail = "kontakt@frogg.dk";
 
@@ -14,12 +16,16 @@ $subject = "Kontaktform fra FROGG.dk";
 
 // Message in mail
 $mailMessage = "En bruger har udfyldt kontaktformen på FROGG.dk.<br><br>
+            Fornavn: $name<br>
             Email: $email<br>
-            Besked: $message<br><br>";
+            Besked: $message<br>
+            Nyhedsbrev: "
+            . ($newsletterCheckbox === 'on' ? "Ja tak" : "Nej tak");
 
+            exit($mailMessage);
 // Prepare headers for mail
 $headers =  "From: FROGG <kontakt@frogg.dk>\r\n";
-$headers .= "Reply-To: $name <$email>\r\n";
+$headers .= "Reply-To: FROGG <$email>\r\n";
 $headers .= "Return-Path: FROGG <kontakt@frogg.dk>\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";

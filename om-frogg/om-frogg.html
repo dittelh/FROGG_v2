@@ -187,8 +187,17 @@
         <div>
             <h2 class="h2 red-font">vi vil <span class="didot-font">elske</span> at høre fra dig!</h2>
             <form class="contact-form" action="contact.php" method="post">
+                <input class="input name-input" placeholder="Fornavn" required type="text" id="name" name="name">
                 <input class="input email-input" placeholder="E-mail" required type="email" id="email" name="email">
                 <textarea class="input message-input" placeholder="Din besked" name="message" id="message"></textarea>
+                <div class="checkbox-wrapper">
+                    <input onclick="lineThroughParagraph('pId14')" type="checkbox" name="newsletter-checkbox" id="newsletter-checkbox">
+                    <label class="p strikethrough h4-less-margin" for="newsletter-checkbox">Tilmeld mig nyhedbrevet, tak!</label>
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 10 10 L 90 90" stroke="var(--red)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                        <path d="M 90 10 L 10 90" stroke="var(--red)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                    </svg>
+                </div>
                 <button class="btn-blue submit-btn" type="submit">Send</button>
             </form>
         </div>
