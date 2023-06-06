@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROGG - Hæklet bæredygtige bomuldsrondeller</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xsr3jin.css">
+    <link rel="stylesheet" href="../../main-style.css">
+    <link rel="stylesheet" href="opskrift-nr2.css">
+    <link rel="stylesheet" href="../../termer/termer.css">
+    <link rel="stylesheet" href="../opskrifter.css">
+    <meta name="title" content="FROGG - Hæklet bæredygtige bomuldsrondeller">
+    <meta name="description" content="Super smarte reusable og bæredygtige hæklet bomuldsrondeller opskrift, 
+    som kan laves med utallige mønstre, størrelser, farver og måder! 
+    Her er det kun fantasien, der sætter grænserne og du kan customade toppen fuldstændig som du ønsker.">
+    <meta property="og:title" content="FROGG - Hæklet bæredygtige bomuldsrondeller">
+    <meta property="og:description" content="Super smarte reusable og bæredygtige hæklet bomuldsrondeller opskrift, 
+    som kan laves med utallige mønstre, størrelser, farver og måder! 
+    Her er det kun fantasien, der sætter grænserne og du kan customade toppen fuldstændig som du ønsker.">
+    <meta property="og:url" content="https://frogg.dk/opskrifter/opskrift-nr2/opskrift-nr2.html">
+    <meta name="og:site_name" content="frogg.dk">
+    <meta property="og:locale" content="da_DK">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://frogg.dk/assets/img/Logo-original.png">
+    <link rel="icon" type="image/x-icon" href="../../assets/img/Logo-profilbillede.png">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="nav-icon-container">
+                <a href="/"><img src="../../assets/img/Logo-original.png" id="frogg-logo" alt="FROGG's logo"></a>
+                <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="openMenu()">
+                    <path
+                    class="line top"
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                    <path
+                     class="line middle"
+                    d="m 20,50 h 50" />
+                    <path
+                    class="line bottom"
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="navigation-menu" id="navigation">
+                <a class="navigations-headlines" href="../../opskrifter/opskrifter.html"><p class="navigation-items here-are-u-nav">OPSKRIFTER</p></a>
+                <div class="navigation-items dropdown-items-container">
+                    <div id="headline-container" onclick="openDropdown('haekleskole-icon', 'haekleskole-dropdown')">
+                        <div class="dropdown-icon" id="haekleskole-icon">
+                            <button aria-label="dropdown-button" class="dropdown-button"></button>
+                            <span class="arrow-side-1 arrow-side-translate"></span>
+                            <span class="arrow-side-2 "></span>
+                        </div>
+                        <span id="haekleskole">HÆKLESKOLE</span>
+                    </div>
+                    <div class="dropdown-list hide-element" id="haekleskole-dropdown">
+                        <a href="../../termer/termer.html"><p class="dropdown-listitems">TERMER</p></a><div class="line-under-dropdown-item"></div>
+                        <a href="../../moenstre/moenstre.html"><p class="dropdown-listitems">MØNSTRE</p></a><div class="line-under-dropdown-item"></div>
+                        <a href="../../laer-at-haekle/laer-at-haekle.html"><p class="dropdown-listitems">LÆR AT HÆKLE</p></a>
+                    </div>
+                </div>
+                <a class="navigations-headlines" href="../../tips/tips.html"><p class="navigation-items">TIPS</p></a>
+                <a class="navigations-headlines" href="../../inspiration/inspiration.html"><p class="navigation-items">INSPIRATION</p></a>
+                <a class="navigations-headlines" href="../../om-frogg/om-frogg.html"><p class="navigation-items">OM FROGG</p></a>
+            </div>
+        </nav>
+    </header>
+    <h1 class="h1 red-font first-h1">Bomulds<br class="hide-on-web">rondel</h1>
+    <h4 class="h4 red-font">Denne opskrift er mega smart! Det kræver kun en lille smule bomuldsgarn at lave og så kan du bruge den igen og igen. Vask den i hånden eller smid den i vaskemaskinen.</h4>
+    <div class="first-div-opskriften">
+        <div class="margin-bottom">
+            <img class="opskriften-img" src="../../assets/img/med_kant/Genbrugelig-vatrondel.jpg" alt="Hæklet vatrondel">
+            <div class="btn-whole-container">
+                <a class="double-btn btn-blue" href="#red-text-box-nr2">tag mig til <br>opskriften!</a>
+                <div class="btn-container">
+                    <a class="double-btn btn-dash" target="_blank" href="../../assets/pdf/Opskrift_til_print_(DK).pdf">download <br>opskrift (DK)</a>
+                    <a class="double-btn btn-dash" target="_blank" href="../../assets/pdf/Opskrift _til_print_(US).pdf">download <br>opskrift (US)</a>
+                </div>
+            </div>
+        </div>
+        <!-- https://oxygen4fun.supadezign.com/tutorials/how-to-animate-a-text-along-a-path/ (inspiration på animatiomn herfra d. 13/05/2023)
+        <svg class="slange hide-slange" version="1.1" id="Lag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 1242 229.5" style="enable-background:new 0 0 1242 229.5;" xml:space="preserve">
+            <path id="curve2" class="st0" d="M0,142.99c49,0,67.01-54.1,100.43-49.82c33.42,4.28,35.82,61.18,99.86,63.47
+            c64.03,2.28,110.18-86.63,165.08-84.99c54.9,1.64,78.24,30.02,145.03,79.9c66.79,49.88,131.67-89.61,232.46-90.34S852,118,914,130
+            c28.61,5.54,66.97,8.32,123-27c74.37-46.88,155,4,205,4"/>
+            <text text-anchor="middle">
+                <textPath class="text-slange mobile-slange"  xlink:href="#curve2" href="#curve2">
+                    <animate attributeName="startOffset" from="100%" to="-50%" begin="0s" dur="12s" repeatCount="indefinite"></animate>
+                    try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - 
+                </textPath>
+                <textPath class="text-slange web-slange"  xlink:href="#curve2" href="#curve2">
+                    <animate attributeName="startOffset" from="100%" to="-15%" begin="0s" dur="11s" repeatCount="indefinite"></animate>
+                    try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat -try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat -
+                </textPath>
+            </text>
+        </svg> -->
+        <section class="margin-bottom">
+            <h3 class="h3 red-font h3-margin">forkortelser der bliver brugt i denne opskrift:</h3>
+            <div class="headline-container-opskrift-nr2 termer-container" onclick="openDropdown('maske-icon', 'maske-dropdown')">
+                <h5 class="h5" id="maske">m = maske</h5>
+                <div class="dropdown-icon dropdown-icon-right" id="maske-icon">
+                    <button aria-label="dropdown-button" class="dropdown-button"></button>
+                    <span class="arrow-side-1 arrow-side-translate"></span>
+                    <span class="arrow-side-2"></span>
+                </div>
+            </div>
+            <div id="maske-dropdown" class="termer-dropdown hide-element">
+                <div class="oversættelses-container">
+                    <div class="amerikansk-container">
+                        <h6 class="h6">Amerikansk</h6>
+                        <p class="p p-termer">st = stich</p>
+                    </div>
+                    <div class="britisk-container">
+                        <h6 class="h6">Britisk</h6>
+                        <p class="p p-termer">st = stitch</p>
+                    </div>
+                </div>
+                <h6 class="h6">How to</h6>
+                <p class="p p-termer">Maske er blot en overordnet beskrivelse fra de mange forskellige typer af masker der findes, men specificere ikke en bestemt type maske.</p>
+                <h6 class="h6">Videoguide</h6>
+                <!-- Skal være en video, billedet er blot placeholder -->
+                <img class="termer-video" src="../../assets/img/vatrondel/garn.jpg" alt="garn">
+            </div>
+            
+            <div class="headline-container-opskrift-nr2 termer-container" onclick="openDropdown('luftmaske-icon', 'luftmaske-dropdown')">
+                <h5 class="h5" id="luftmaske">lm = luftmaske</h5>
+                <div class="dropdown-icon dropdown-icon-right" id="luftmaske-icon">
+                    <button aria-label="dropdown-button" class="dropdown-button"></button>
+                    <span class="arrow-side-1 arrow-side-translate"></span>
+                    <span class="arrow-side-2"></span>
+                </div>
+            </div>
+            <div id="luftmaske-dropdown" class="termer-dropdown hide-element">
+                <div class="oversættelses-container">
+                    <div class="amerikansk-container">
+                        <h6 class="h6">Amerikansk</h6>
+                        <p class="p p-termer">ch = chain stitch</p>
+                    </div>
+                    <div class="britisk-container">
+                        <h6 class="h6">Britisk</h6>
+                        <p class="p p-termer">ch = chain stitch</p>
+                    </div>
+                </div>
+                <h6 class="h6">How to</h6>
+                <p class="p p-termer">Lav en løkke på garnet, og sæt den på din hæklenål – træk det sammen så det strammes op på din nål.
+                    Slå garnet om din hæklenål, og træd det nu igennem løkken, nu har du en lm, fortsæt til du har det antal du skal bruge, eller det som opskriften foreskriver.
+                </p>
+                <h6 class="h6">Videoguide</h6>
+                <!-- Skal være en video, billedet er blot placeholder -->
+                <img class="termer-video" src="../../assets/img/maskemarkoer.jpg" alt="maskemarkører">
+            </div>
+
+            <div class="headline-container-termer termer-container" onclick="openDropdown('magiskring-icon', 'magiskring-dropdown')">
+                <h5 class="h5" id="magiskring">mr = magisk ring</h5>
+                <div class="dropdown-icon dropdown-icon-right" id="magiskring-icon">
+                    <button aria-label="dropdown-button" class="dropdown-button"></button>
+                    <span class="arrow-side-1 arrow-side-translate"></span>
+                    <span class="arrow-side-2"></span>
+                </div>
+            </div>
+            <div id="magiskring-dropdown" class="termer-dropdown hide-element">
+                <div class="oversættelses-container">
+                    <div class="amerikansk-container">
+                        <h6 class="h6">Amerikansk</h6>
+                        <p class="p p-termer">Magic ring</p>
+                    </div>
+                    <div class="britisk-container">
+                        <h6 class="h6">Britisk</h6>
+                        <p class="p p-termer">Magic ring</p>
+                    </div>
+                </div>
+                <h6 class="h6">How to</h6>
+                <p class="p p-termer">Når man skal hækle rundt, vil en hækle opskrift som regel involvere en magisk ring.
+                    <br>
+                    Tag enden af garnet og vikl det to gange rundt om din pegefinger.
+                    Lav en løkke.
+                    Stik hæklenålen ind i løkken og træk garnet fra pegefingeren igennem løkken.
+                    Lav en luftmaske (træk garnet igennem løkken igen).
+                    Lav det ønskede antal fastmasker i ringen.
+                    Luk ringen ved at trække i den korte ende af garnet.
+                </p>
+                <h6 class="h6">Videoguide</h6>
+                <!-- Skal være en video, billedet er blot placeholder -->
+                <img class="termer-video" src="../../assets/img/vatrondel/garn.jpg" alt="garn">
+            </div>
+
+            <div class="headline-container-opskrift-nr2 termer-container" onclick="openDropdown('stangmaske-icon', 'stangmaske-dropdown')">
+                <h5 class="h5" id="stangmaske">stgm = stangmaske</h5>
+                <div class="dropdown-icon dropdown-icon-right" id="stangmaske-icon">
+                    <button aria-label="dropdown-button" class="dropdown-button"></button>
+                    <span class="arrow-side-1 arrow-side-translate"></span>
+                    <span class="arrow-side-2"></span>
+                </div>
+            </div>
+            <div id="stangmaske-dropdown" class="termer-dropdown hide-element">
+                <div class="oversættelses-container">
+                    <div class="amerikansk-container">
+                        <h6 class="h6">Amerikansk</h6>
+                        <p class="p p-termer">dc = double crochet</p>
+                    </div>
+                    <div class="britisk-container">
+                        <h6 class="h6">Britisk</h6>
+                        <p class="p p-termer">trc = treble crochet</p>
+                    </div>
+                </div>
+                <h6 class="h6">How to</h6>
+                <p class="p p-termer">Slå garnet om nålen, før det igennem masken, slå garnet omkring nålen igen og træk det igennem masken – du har nu 3 løkker på din nål.
+                    Slå garnet om nålen, og træk igennem de 2 forreste løkker på nålen. Slå om igen og træk garnet igennem de sidste 2 løkker på nålen – nu har du lavet en stgm.</p>
+                <h6 class="h6">Videoguide</h6>
+                <!-- Skal være en video, billedet er blot placeholder -->
+                <img class="termer-video" src="../../assets/img/maskemarkoer.jpg" alt="maskemarkører">
+            </div>
+
+            <div class="headline-container-termer termer-container" onclick="openDropdown('kædemaske-icon', 'kædemaske-dropdown')">
+                <h5 class="h5" id="kædemaske">km = kædemaske</h5>
+                <div class="dropdown-icon dropdown-icon-right" id="kædemaske-icon">
+                    <button aria-label="dropdown-button" class="dropdown-button"></button>
+                    <span class="arrow-side-1 arrow-side-translate"></span>
+                    <span class="arrow-side-2"></span>
+                </div>
+            </div>
+            <div id="kædemaske-dropdown" class="termer-dropdown hide-element">
+                <div class="oversættelses-container">
+                    <div class="amerikansk-container">
+                        <h6 class="h6">Amerikansk</h6>
+                        <p class="p p-termer">sl st = slip stitch</p>
+                    </div>
+                    <div class="britisk-container">
+                        <h6 class="h6">Britisk</h6>
+                        <p class="p p-termer">sl st = slip stitch</p>
+                    </div>
+                </div>
+                <h6 class="h6">How to</h6>
+                <p class="p p-termer">Bruges som regel i slutninger af hæklingen.
+                    Stik nålen igennem masken, slå om garnet og træk det igennem både masken og løkken på en gang.                    
+                </p>
+                <h6 class="h6">Videoguide</h6>
+                <!-- Skal være en video, billedet er blot placeholder -->
+                <img class="termer-video" src="../../assets/img/vatrondel/garn.jpg" alt="garn">
+            </div>
+
+            <div class="headline-container-termer termer-container" onclick="openDropdown('udtagning-icon', 'udtagning-dropdown')">
+                <h5 class="h5" id="udtagning">udt = udtagning</h5>
+                <div class="dropdown-icon dropdown-icon-right" id="udtagning-icon">
+                    <button aria-label="dropdown-button" class="dropdown-button"></button>
+                    <span class="arrow-side-1 arrow-side-translate"></span>
+                    <span class="arrow-side-2"></span>
+                </div>
+            </div>
+            <div id="udtagning-dropdown" class="termer-dropdown hide-element">
+                <div class="oversættelses-container">
+                    <div class="amerikansk-container">
+                        <h6 class="h6">Amerikansk</h6>
+                        <p class="p p-termer">inc = increase</p>
+                    </div>
+                    <div class="britisk-container">
+                        <h6 class="h6">Britisk</h6>
+                        <p class="p p-termer">inc = increase</p>
+                    </div>
+                </div>
+                <h6 class="h6">How to</h6>
+                <p class="p p-termer">Start med at lave en maske af den type opskriften oplyser. Når den er lavet, så laver du endnu en magen til, i den samme maske, så du har 2 ens masker i den samme maske. Det kan eks. være 2 fm i samme maske. Nogle gange skal der laves endnu flere masker i samme maske, men det vil fremgå i opskriften, eks. lav en udt. Med 3 fm i næste m.
+                </p>
+                <h6 class="h6">Videoguide</h6>
+                <!-- Skal være en video, billedet er blot placeholder -->
+                <img class="termer-video" src="../../assets/img/maskemarkoer.jpg" alt="maskemarkører">
+            </div>
+        </section>
+    </div>
+    <div class="all-img-div">
+        <div class="img-inspo-div1 img-section1">
+            <section class="green-text-box">
+                <h2 class="h2 blue-font special-margin">det skal du <span class="didot-font">bruge</span> <span class="hide-mobile">til den reusable "vat"rondel</span></h2>
+            </section>
+            <img class="square-img" src="../../assets/img/vatrondel/bobler.png" alt="bobler">
+            <img class="square-img" src="../../assets/img/vatrondel/haeklenaal.jpg" alt="hæklenål">
+        </div>
+        <div class="img-inspo-div1 img-section2">
+            <img class="square-img square-item" src="../../assets/img/vatrondel/markoer.jpg" alt="maskemarkører">
+            <img class="square-img square-item" src="../../assets/img/vatrondel/garn.jpg" alt="garnnøgle">
+                <ul class="list-opskrifter square-text-box green-box">
+                    <li class="p">Hæklenål: 3 - 3,5 - 4 mm</li>
+                    <li class="p">Ca. 5g bomuldsgarn med løbelængde på 50g = 160m</li>
+                    <li class="p">Evt. stoppenål + maskemarkører</li>
+                </ul>
+            <img class="square-img" src="../../assets/img/vatrondel/naal.jpg" alt="stoppenål">
+        </div>
+    </div>
+    <!-- https://oxygen4fun.supadezign.com/tutorials/how-to-animate-a-text-along-a-path/ (inspiration på animatiomn herfra d. 13/05/2023) -->
+    <svg class="slange " version="1.1" id="Lag_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 1242 229.5" style="enable-background:new 0 0 1242 229.5;" xml:space="preserve">
+        <path id="curve1" class="st0" d="M0,142.99c49,0,67.01-54.1,100.43-49.82c33.42,4.28,35.82,61.18,99.86,63.47
+        c64.03,2.28,110.18-86.63,165.08-84.99c54.9,1.64,78.24,30.02,145.03,79.9c66.79,49.88,131.67-89.61,232.46-90.34S852,118,914,130
+        c28.61,5.54,66.97,8.32,123-27c74.37-46.88,155,4,205,4"/>
+        <text text-anchor="middle">
+            <textPath class="text-slange mobile-slange"  xlink:href="#curve1" href="#curve1">
+                <animate attributeName="startOffset" from="100%" to="-50%" begin="0s" dur="12s" repeatCount="indefinite"></animate>
+                try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - 
+            </textPath>
+            <textPath class="text-slange web-slange"  xlink:href="#curve1" href="#curve1">
+                <animate attributeName="startOffset" from="100%" to="-15%" begin="0s" dur="11s" repeatCount="indefinite"></animate>
+                try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat -try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat -
+            </textPath>
+        </text>
+    </svg>
+    <!-- <div class="text-banner-infinity">
+        <p class="h3 red-font banner-text">farverig!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">uperfekt!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">kreativt!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">sjovt!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">trendy!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">farverig!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">uperfekt!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">kreativt!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">sjovt!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">trendy!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">farverig!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">uperfekt!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">kreativt!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">sjovt!</p>
+        <p class="h3 red-font banner-text">-</p>
+        <p class="h3 red-font banner-text">trendy!</p>
+    </div> -->
+    <!-- <div id="outerContainer"> -->
+        <!-- <div id="container"> -->
+            <section class="red-text-box" id="red-text-box-nr2">
+                <h2 class="h2 h2-margin white-font">start her</h2>
+                <h4 class="h4 h4-margin white-font">Denne opskrift er super hurtig at komme igennem! Når du først har lavet et par stykker, sidder den hurtigt på rygraden.</h4>
+            </section>
+            <section class="dash-box">
+                <h3 class="h3 h3-margin-edit">1. sektion</h3>
+                <div>
+                    <!-- Checkbox inspiration: https://getcssscan.com/css-checkboxes-examples d. 15/05 2023 - #32 by Dhavidy Luiz -->
+                    <div class="checkbox-wrapper">
+                        <input onclick="lineThroughParagraph('pId1')" type="checkbox" name="checkbox-1" id="checkbox-1">
+                        <label class="h4 red-font strikethrough h4-less-margin" for="checkbox-1">1. Omgang</label>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 10 10 L 90 90" stroke="var(--blue)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                            <path d="M 90 10 L 10 90" stroke="var(--blue)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                        </svg>
+                    </div>
+                    <p id="pId1" class="p p-padding">Start med en mr.</p>
+                </div>
+                <div>
+                    <div class="checkbox-wrapper">
+                        <input onclick="lineThroughParagraph('pId2')" type="checkbox" name="checkbox-2" id="checkbox-2">
+                        <label class="h4 red-font strikethrough h4-less-margin" for="checkbox-2">2. Omgang</label>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 10 10 L 90 90" stroke="var(--blue)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                            <path d="M 90 10 L 10 90" stroke="var(--blue)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                        </svg>
+                    </div>
+                    <p id="pId2" class="p p-padding">Hækl 2 lm og derefter 12 stgm i mr. Stram mr sammen. Afslut med km i første m. (12)</p>
+                </div>
+                <div>
+                    <div class="checkbox-wrapper">
+                        <input onclick="lineThroughParagraph('pId3')" type="checkbox" name="checkbox-3" id="checkbox-3">
+                        <label class="h4 red-font strikethrough h4-less-margin" for="checkbox-3">3. Omgang</label>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 10 10 L 90 90" stroke="var(--blue)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                            <path d="M 90 10 L 10 90" stroke="var(--blue)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                        </svg>
+                    </div>
+                    <p id="pId3" class="p p-padding">Hækl 2 lm. Herefter 1 stgm udt i hver m fra forrige omg. Afslut med km i første m. (24)</p>
+                </div>
+                <div>
+                    <div class="checkbox-wrapper">
+                        <input onclick="lineThroughParagraph('pId4')" type="checkbox" name="checkbox-4" id="checkbox-4">
+                        <label class="h4 red-font strikethrough h4-less-margin" for="checkbox-4">4. Omgang</label>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 10 10 L 90 90" stroke="var(--blue)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                            <path d="M 90 10 L 10 90" stroke="var(--blue)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                        </svg>
+                    </div>
+                    <p id="pId4" class="p p-padding">Hækl 2 lm. Herefter 1 stgm, 1 stgm udt skiftevis hele omg. Afslut med km i første m. (24)</p>
+                </div>
+                <div>
+                    <div class="checkbox-wrapper">
+                        <input onclick="lineThroughParagraph('pId5')" type="checkbox" name="checkbox-5" id="checkbox-5">
+                        <label class="h4 red-font strikethrough h4-less-margin" for="checkbox-5">5. Omgang</label>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 10 10 L 90 90" stroke="var(--blue)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                            <path d="M 90 10 L 10 90" stroke="var(--blue)" stroke-dasharray="113" stroke-dashoffset="113"></path>
+                        </svg>
+                    </div>
+                    <p id="pId5" class="p p-padding">Så skal der bare hæftes ender. Voila!</p>
+                </div>
+            </section>
+            <div class="img-div-opskrift">
+                <iframe class="video raekke-img" src="https://www.youtube.com/embed/GAudzQ8dnNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <img class="raekke-img" src="../../assets/img/vatrondel/process2.png" alt="process billede ag vatrondel">
+            </div>
+            <div class="img-div-web">
+                <iframe class="video raekke-img" src="https://www.youtube.com/embed/GAudzQ8dnNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <img class="raekke-img" src="../../assets/img/vatrondel/process2.png" alt="process billede ag vatrondel">
+            </div>
+            <!-- <div id="item"></div> -->
+          <!-- </div> -->
+      <!-- </div> -->
+      <video disableRemotePlayback class="footer-video" autoplay loop muted playsinline>
+        <source src="../../assets/animation/footer/Footer_mand.mov" type='video/quicktime'; codecs="hvc1">
+        <source src="../../assets/animation/footer/Footer_mand.webm" type="video/webm">
+    </video>
+    <footer>
+        <div class="footer-content">
+            <img class="negativt-logo" src="../../assets/img/Logo-hvid.png" alt="FROGG negativt logo">
+            <div class="footer-text-container">
+                <a class="p a-footer" href="../../index.html">www.frogg.dk</a>
+                <a class="p a-footer" href="mailto:kontakt@frogg.dk">kontakt@frogg.dk</a>
+                <a class="p a-footer" href="../../om-frogg/om-frogg.html">Læs om FROGG her</a>
+            </div>
+        </div>
+        <div class="line-under-dropdown-item-footer"></div>
+        <div class="some-icon-section">
+            <a class="a-some" target="_blank" href="https://www.instagram.com/frogg.dk/"><img class="some-icon" src="../../assets/img/insta.svg" alt="instagram ikon"></a>
+            <a class="a-some" target="_blank" href="https://www.tiktok.com/@froggzmkz2q?_t=8cKihYRn3UZ&_r=1"><img class="some-icon" src="../../assets/img/tiktok.svg" alt="tiktok ikon"></a>
+        </div>
+    </footer>
+    <script src="../../script.js"></script>
+    <script src="opskrift-nr2.js"></script>
+</body>
+</html>

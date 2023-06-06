@@ -1,0 +1,112 @@
+.headline-container-moenstre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moenstre-img{
+    width: 90vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: var(--red) solid 1px;
+    border-bottom: none;
+    box-sizing: border-box;
+    margin-top: 15%;
+    height: 50vw;
+    object-fit: cover;
+}
+
+.moenstre-container{
+    margin-top: 0 !important;
+}
+
+#klistermaerke-img{
+    display: none;
+}
+
+
+@media screen and (min-width: 992px){
+    .moenstre-img{
+        width: 30vw;
+        display: flex;
+        margin-left: 0;
+        margin-right: auto;
+        border: var(--red) solid 2px;
+        border-bottom: none;
+        box-sizing: border-box;
+        margin-top: 3vw;
+        height: 12vw;
+        object-fit: cover;
+    }
+
+    .content-no-margin{
+        margin-left: 0;
+    }
+
+    #boelge-dropdown{
+        width: 30vw;
+        border-style: dashed;
+        border-width: 2px;
+        border-top: none;
+        border-color: var(--red);
+        background-color: var(--lightpink);
+        /* display: flex; */
+        flex-direction: column;
+        margin-left: 10rem;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding-right: 3%;
+    }
+
+    .moenstre-container{
+        width: 30vw;
+        background-color: var(--purple);
+        margin-left: 0;
+        border: var(--red) solid 2px;
+        box-sizing: border-box;
+        margin-top: 5%;
+        height: 3vw;
+    }
+
+
+    .moenstre-section{
+        margin-left: 10rem !important;  
+    }
+
+    .moenstre-content{
+        width: 85vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .moenstre-second-div{
+        width: 40vw;
+    }
+
+    #klistermaerke-img{
+        display: unset;
+        position: absolute;
+        right: 8vw;
+        top: 7vw;
+        width: 15vw;
+    }
+
+    .headline-container-moenstre:hover{
+        cursor: pointer;
+        background-color: var(--darkpurple);
+    }
+
+    #muslinge-dropdown{
+        margin-left: unset !important;
+        margin-right: unset !important;
+    }
+
+    #bobler-dropdown{
+        margin-left: 10rem !important;
+        margin-right: unset !important;
+    }
+
+}
+

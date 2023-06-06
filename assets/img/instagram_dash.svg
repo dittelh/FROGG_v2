@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_2" data-name="Lag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.22 243.22">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 0 0 11.91 11.91;
+      }
+    </style>
+  </defs>
+  <g id="Lag_2-2" data-name="Lag 2">
+    <g>
+      <g>
+        <polyline class="cls-1" points="240.72 234.72 240.72 240.72 234.72 240.72"/>
+        <line class="cls-2" x1="222.82" y1="240.72" x2="14.45" y2="240.72"/>
+        <polyline class="cls-1" points="8.5 240.72 2.5 240.72 2.5 234.72"/>
+        <line class="cls-2" x1="2.5" y1="222.82" x2="2.5" y2="14.45"/>
+        <polyline class="cls-1" points="2.5 8.5 2.5 2.5 8.5 2.5"/>
+        <line class="cls-2" x1="20.41" y1="2.5" x2="228.77" y2="2.5"/>
+        <polyline class="cls-1" points="234.72 2.5 240.72 2.5 240.72 8.5"/>
+        <line class="cls-2" x1="240.72" y1="20.41" x2="240.72" y2="228.77"/>
+      </g>
+      <circle class="cls-1" cx="121.61" cy="121.61" r="53.18"/>
+      <circle class="cls-1" cx="189.56" cy="53.56" r="15.53"/>
+    </g>
+  </g>
+</svg>

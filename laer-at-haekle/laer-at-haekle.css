@@ -1,0 +1,226 @@
+.headline-container-laer-at-haekle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purple-section{
+    background-color: var(--purple);
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+}
+
+.img-laer-at-haekle{
+    width: 43vw;
+    height: 43vw;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+    object-fit: cover;
+    
+}
+
+.img-container{
+    display: flex;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.p-margin{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+.h3-no-bottom-margin{
+    margin-bottom: 0;
+}
+
+.btn-text-section{
+    margin-bottom: 15%;
+}
+
+.learn-more-btn{
+    margin-bottom: -1.1rem;
+    margin-left: 5%;
+}
+
+
+.yellow-section{
+    background-color: var(--yellow);
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+}
+
+.first-yellow{
+    margin-top: 15%;
+}
+
+.p-extra-margin-top{
+    margin-top: 8%;
+}
+
+.h2-forslag{
+    margin-top: 25%;
+}
+
+.termer-laer-at-haekle{
+    margin-top: 0 !important;
+    border-top: none !important;
+}
+
+.extra-margin{
+    margin-top: 5%;
+}
+
+.headline-container-laer-at-haekle:hover{
+    cursor: pointer;
+    background-color: var(--darkpurple);
+}
+
+.img-container-web, .img-container-web2{
+    display: none;
+}
+
+.btn-termer{
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.slange{
+    margin-top: 15%;
+    margin-bottom: 0% !important;
+}
+
+
+@media screen and (min-width: 992px){
+    .img-container{
+        display: none;
+    }
+
+    .img-container-web{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+        position: absolute;
+        right: 26vw;
+        top: 23.2vw;
+    }
+
+    .img-laer-at-haekle{
+        width: 15vw;
+        height: 15vw;
+        border: var(--red) solid 2px;
+    }
+
+    .purple-section{
+        width: 45vw;
+        margin-left: 10rem;
+        margin-right: auto;
+        border: var(--red) solid 2px;
+        margin-bottom: 3vw;
+    }
+
+    .btn-text-section{
+        margin-bottom: 3vw;
+    }
+
+    .h3-no-bottom-margin{
+        margin-left: 5%;
+    }
+
+    .p-margin{
+        margin-bottom: 5%;
+    }
+
+    .slange{
+        margin-top: 0% !important;
+    }
+
+    .yellow-section{
+        width: 45vw;
+        margin-left: 10rem;
+        margin-right: auto;
+        border: var(--red) solid 2px;
+    }
+    
+    .first-yellow{
+        margin-top: 2%;
+    }
+
+
+    .headline-container-laer-at-haekle {
+        margin-left: 10rem !important;
+        width: 45vw !important;
+    }
+
+    #magiskring-dropdown, #luftmaske-dropdown{
+        margin-left: 10rem !important;
+        width: 45vw !important;
+    }
+
+
+    .img-container-web2{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+        position: absolute;
+        right: 27vw;
+        top: 132.5vw;
+    }
+
+    .yellow-margin{
+        margin-bottom: 3vw;
+    }
+
+    .yellow-margin-top{
+        margin-top: 3vw;
+    }
+
+    .extra-margin{
+        margin-top: 3vw;
+    }
+
+    .p-extra-margin-top {
+        margin-top: 5%;
+    }
+
+    .h2-forslag{
+        margin-top: 10%;
+        margin-bottom: 2%;
+    }
+
+    .btn-termer{
+        margin-left: 10rem;
+        margin-top: 2%;
+    }
+    
+
+  
+}
+
+@media screen and (min-width: 1750px){
+    .img-container-web{
+        right: 27vw;
+        top: 18vw;
+    }
+
+    .img-container-web2{
+        right: 27vw;
+        top: 127.8vw;
+    }
+}

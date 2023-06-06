@@ -1,0 +1,324 @@
+.blue-section-about-frogg{
+    width: 90vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    background-color: var(--blue);
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+    margin-top: 15%;
+}
+
+#fjong-img{
+    display: none;
+}
+
+.white-font{
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.white-font-p{
+    color: var(--white);
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.slange{
+    margin-bottom: 10%;
+}
+
+.video-om-frogg{
+    width: 90vw;
+    height: 55vw;
+    object-fit: cover;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    background-color: var(--blue);
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+}
+
+.dash-section-about-frogg{
+    width: 90vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    border-color: var(--blue);
+    border-style: dashed;
+    border-width: 1px;
+    box-sizing: border-box;
+    background-color: var(--lightpink);
+    margin-top: 5%;
+}
+
+.black-font-p{
+    color: var(--black);
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.text-banner-infinity{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: var(--yellow);
+    border-bottom: var(--red) solid 1px;
+    border-top: var(--red) solid 1px;
+    width: 100vw;
+    margin-top: 25%;
+}
+
+.banner-text{
+    white-space: nowrap;
+    padding: 0 1rem;
+    animation: move-rtl 17000ms linear infinite;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@keyframes move-rtl{
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-900vw);
+    }
+}
+
+
+/* kontakt form */
+
+.contact-section{
+    margin-top: 25%;
+    background-color: var(--purple);
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+    border-left: none;
+    border-right: none;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+
+.input{
+    border: var(--red) solid 1px;
+    color: var(--red);
+    width: 15rem;
+    margin-bottom: 5%;
+    font-family: Readex Pro;
+    padding: 5%;
+}
+
+.email-input{
+    height: 5vw;
+}
+
+.message-input{
+    height: 65vw;
+}
+
+::placeholder{
+    opacity: 50%;
+    color: var(--red);
+    font-family: Readex Pro;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.submit-btn{
+    border: none;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 145px;
+    height: 34px;
+}
+
+.mail-video{
+    width: 80vw;
+    display: flex;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    margin-top: -10%;
+}
+
+
+@media screen and (min-width: 992px){
+    #fjong-img{
+        width: 35vw;
+        display: unset;
+        position: absolute;
+        top: 25vw;
+        right: 13vw;
+    }
+
+    .blue-section-about-frogg{
+        width: 35vw;
+        margin-left: 10rem;
+        border: var(--red) solid 2px;
+        margin-top: 5%;
+    }
+
+    .st0{
+        fill:none;
+        stroke:#70F054;
+        stroke-width:60;
+        stroke-miterlimit:10;
+    }
+    
+    .slange{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .h3-no-margin{
+        padding-top: 3%;
+        margin-left: 5%;
+    }
+
+    .dash-section-about-frogg{
+        width: 35vw;
+        display: flex;
+        margin-left: 10rem;
+        border-width: 2px;
+        margin-top: 5%;
+    }
+    
+    .video-om-frogg{
+        width: 35vw;
+        height: 25vw;
+        object-fit: cover;
+        display: flex;
+        margin-left: 10rem;
+        border: var(--red) solid 2px;
+    }
+
+    .h2-margin{
+        margin-bottom: 2%;
+        margin-top: 0%;
+    }
+
+    .text-banner-infinity{
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        background-color: var(--yellow);
+        border-bottom: var(--red) solid 2px;
+        border-top: var(--red) solid 2px;
+        width: 100vw;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    @keyframes move-rtl{
+        0% {
+            transform: translateX(100vw);
+        }
+        100% {
+            transform: translateX(-400vw);
+        }
+    }
+
+    .banner-text{
+        white-space: nowrap;
+        padding: 0 0;
+        animation: move-rtl 30000ms linear infinite;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /* kontakt form */
+    .contact-section{
+        margin-top: 10%;
+        border: var(--red) solid 2px;
+        display: flex;
+        border-left: none;
+        border-right: none;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 10rem;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .input{
+        border: var(--red) solid 2px;
+        color: var(--red);
+        width: 25rem;
+        margin-bottom: 5%;
+        font-family: Readex Pro;
+        padding: 5%;
+    }
+
+    .email-input{
+        height: 0vw;
+    }
+
+    .message-input{
+        height: 15vw;
+    }
+
+    ::placeholder{
+        opacity: 50%;
+        color: var(--red);
+        font-family: Readex Pro;
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+
+    .contact-form-img{
+        width: 30vw;
+        height: 30vw;
+        border: var(--red) solid 2px;
+        box-sizing: border-box;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+        object-fit: cover;
+    }
+
+    .submit-btn{
+        border: none;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1.06rem;
+        text-transform: uppercase;
+        width: 245px;
+        height: 42px;
+    }
+
+    .mail-video{
+        width: 45vw;
+        display: flex;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        margin-right: 10%;
+        margin-top: -7%;
+    }
+
+}

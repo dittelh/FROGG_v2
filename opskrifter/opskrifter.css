@@ -1,0 +1,247 @@
+.opskrifter-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+
+.opskrifter-section div {
+    position: relative;
+}
+
+.opskrift-section{
+    width: 43vw;
+    margin-bottom: 20vw;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+}
+
+#overflow-section{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.opskrift-img{
+    width: 40vw;
+    height: 40vw;
+    object-fit: cover;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+}
+
+.green-opskrift{
+    background-color: var(--green);
+}
+
+.purple-opskrift{
+    background-color: var(--purple);
+}
+
+.yellow-opskrift{
+    background-color: var(--yellow);
+}
+
+.blue-opskrift{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.red-opskrift{
+    background-color: var(--red);
+}
+
+.blue-dash-opskrift{
+    width: 43vw;
+    margin-bottom: 20vw;
+    border-color: var(--blue);
+    border-style: dashed;
+    border-width: 1px;
+    box-sizing: border-box;
+    background-color: var(--lightpink);
+}
+
+.list-opskrifter{
+    list-style-type: disc;
+    padding-left: 7vw;
+    margin-bottom: 5rem;
+}
+
+.opskrift-btn{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1rem;
+    margin-top: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 5%
+}
+
+.h3opskrift{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+
+
+.st5{
+    fill:#FAF0F7;
+}
+
+.st1{
+    fill:#DA503C;
+}
+
+.tern-svg{
+    position: absolute;
+    z-index: -5;
+    top: 50%;
+    transform: rotateZ(90deg) scale(2);
+}
+
+.text-banner-infinity{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: var(--yellow);
+    border-bottom: var(--red) solid 1px;
+    border-top: var(--red) solid 1px;
+    width: 100vw;
+    margin-bottom: 20%;
+    /* margin-top: 20%; */
+}
+
+.banner-text{
+    white-space: nowrap;
+    padding: 0 1rem;
+    animation: move-rtl 17000ms linear infinite;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@keyframes move-rtl{
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-900vw);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .first-h1{
+        margin-top: 12vw;
+    }
+
+    .br-hide{
+        display: none;
+    }
+
+    .opskrift-img{
+        width: 15vw;
+        height: 15vw;
+        border: var(--red) solid 2px;
+    }
+
+    .opskrifter-section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 85vw;
+        margin-left: 10rem;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+    
+
+    .opskrift-section{
+        width: 20vw;
+        margin-bottom: 10vw;
+        border: var(--red) solid 2px;
+    }
+
+    .blue-dash-opskrift{
+        width: 20vw;
+        margin-bottom: 10vw;
+        border-width: 2px;
+    }
+
+    .h3opskrift{
+        margin-top: 5%;
+        margin-bottom: 2%;
+        margin-left: 1vw;
+    }
+
+    .list-opskrifter{
+        list-style-type: disc;
+        padding-left: 2vw;
+    }
+
+    .list-opskrifter .p{
+       margin-bottom: .8vw;
+    }
+
+    .tern-svg{
+        top: 40%;
+        left: 14%;
+        transform: rotateZ(0deg) scale(1.1);
+    }
+
+    .text-banner-infinity{
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        background-color: var(--yellow);
+        border-bottom: var(--red) solid 2px;
+        border-top: var(--red) solid 2px;
+        width: 100vw;
+        margin-bottom: 10%;
+    }
+    
+    .banner-text{
+        white-space: nowrap;
+        padding: 0 0;
+        animation: move-rtl 20000ms linear infinite;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    @keyframes move-rtl{
+        0% {
+            transform: translateX(100vw);
+        }
+        100% {
+            transform: translateX(-285vw);
+        }
+    }
+
+    
+}
+
+@media screen and (min-width: 1600px){
+
+    .opskrifter-section{
+       
+        width: 75vw;
+        
+    }
+
+    .opskrift-section{
+        width: 17vw;
+    }
+
+    .blue-dash-opskrift{
+        width: 17vw;
+    
+    }
+}

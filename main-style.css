@@ -1,0 +1,988 @@
+/* Fonte fra Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Readex+Pro&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+@font-face {
+    font-family: StretchedReadex;
+    src: url("assets/fonts/StretchedReadex-Regular.ttf");
+  }
+
+
+/* Farver */
+:root {
+    --lightpink: #FAF0F7;
+    --white: #FFFFFF; 
+    --red: #DA503C;
+    --purple: #C1B6F0; 
+    --green: #71F055;
+    --yellow: #F4E767; 
+    --blue: #1825FF; 
+    --black: #000000;
+    --darkpurple: #9D8FDC;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--lightpink);
+    width: 100%;
+    margin: 0;
+}
+
+.progress-container {
+    width: 100vw;
+    height: 8px;
+    background: transparent;
+}
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: var(--red);
+    width: 0%;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+
+
+
+
+
+/* Hamburgermenu */
+/* Kode inspireret af: https://codepen.io/ainalem/pen/LJYRxz?editors=1100 d. 7 maj 2023 - 
+der er lavet tilrettelser, så det passer ind til designet */
+
+.ham{
+    height: 87px;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active{
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active{
+    transform: rotate(180deg);
+}
+
+.line{
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: var(--red);
+    stroke-width: 4;
+    stroke-linecap: square;
+}
+
+.ham8 .top {
+    stroke-dasharray: 40 160;
+}
+
+.ham8 .middle {
+    stroke-dasharray: 50 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+}
+
+.ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+}
+
+.ham8.active .top {
+    stroke-dashoffset: -64px;
+}
+
+.ham8.active .middle {
+    stroke-dashoffset: -10px;
+    transform: rotate(90deg);
+}
+
+.ham8.active .bottom {
+    stroke-dashoffset: -64px;
+}
+
+
+/* Navigation */
+header{
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    width: 100vw;
+    z-index: 10;
+}
+
+#frogg-logo{
+    width: 8rem;
+    z-index: 10;
+    /* position: relative; */
+}
+
+#nav-icon-container{
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    position: relative;
+}
+
+.hide-links{
+    animation: navigation-slideout .2s ease-in-out;
+}
+
+#navbar{
+    border-bottom: var(--red) 2px solid;
+    width: 100%;
+    background-color: var(--lightpink);
+    height: 100%;
+}
+
+.navigation-menu{
+    right: -70%;
+    position: absolute;
+    top: 100%;
+    width: 16rem;
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    text-align: end;
+    background-color: var(--lightpink);
+    border: var(--red) 1px solid;
+    margin-top: 0;
+}
+
+.show-links{
+    right: 0;
+    animation: navigation-slidein .2s ease-in-out;
+    z-index: 10;
+}
+
+@keyframes navigation-slidein {
+    from{
+        right: -70%;
+    }
+    to{
+        right: 0;
+    }
+}
+
+@keyframes navigation-slideout {
+    from{
+        right: 0%;
+    }
+    to{
+        right: -70%;
+    }
+}
+
+.dropdown-listitems{
+    background-color: var(--lightpink);
+    padding-right: 1.25rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    color: var(--red);
+    margin: 0;
+}
+
+.dropdown-listitems a{
+    color: var(--red);
+}
+
+#haekleskole{
+    padding-bottom: .7rem;
+    padding-right: 1.25rem;
+}
+
+
+
+.line-under-dropdown-item{
+   margin: 0; 
+   width: 12.5rem;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: var(--red);
+   height: 1px;
+}
+
+.last-line{
+    margin-bottom: 1rem;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navigation-items{
+    color: var(--lightpink);
+    background-color: var(--red);
+    font-family: "Oswald";
+    font-weight: 200;
+    font-size: 1.4rem;
+    /* width: 13.7rem; */
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    /* margin-right: 1.25rem; */
+    padding-right: 1.25rem;
+    margin-top: 0;
+    
+}
+
+.navigations-headlines{
+    /* color: var(--lightpink);
+    background-color: var(--red); */
+    /* width: 13.7rem; */
+    margin-left: 0.9rem;
+}
+
+
+.dropdown-items-container{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: auto; */
+    margin-left: 0.9rem;
+    padding-bottom: 0 !important;
+    padding-right: unset;
+}
+
+.dropdown-list{
+    /* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"); */
+    border-style: dashed;
+    border-width: 2px;
+    border-top: none;
+    border-right: none;
+    border-color: var(--red);
+    background-color: var(--lightpink);
+    flex-direction: column;
+    /* animation: dropdown-animation .5s ; */
+}
+
+.hide-element{
+    display: none;
+}
+
+.show-element{
+    display: flex;
+}
+
+
+.dropdown-icon {
+    position: relative;
+    width: 0.65em;
+    margin-bottom: .5rem;
+    margin-left: .8rem;
+}
+
+.dropdown-icon-right {
+    margin-right: 2rem;
+}
+
+.dropdown-icon-right span {
+    background-color: var(--black) !important;
+}
+
+#headline-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Dropdown icon */
+.dropdown-icon .dropdown-button {
+    opacity: 0;
+    position: absolute;
+    z-index: 45;
+    display: block;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+}
+
+.dropdown-icon span {
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--lightpink);
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease,-webkit-transform .2s ease;
+}
+
+
+.arrow-side-1 {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.arrow-side-2 {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.arrow-side-translate{
+    -webkit-translate: 12px;
+    -ms-translate: 12px;
+    translate: 12px;
+}
+
+.dropdown-icon span {
+    width: 18px;
+}
+
+/* @keyframes dropdown-animation {
+    from{
+        height: 0;
+    }
+    to{
+        height: 100%;
+    }
+} */
+
+
+
+
+/* Font styling */
+.first-h1{
+    margin-top: 35%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.h1{
+    font-family: StretchedReadex;
+    font-size: 3.94rem;
+    line-height: 3.728rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.h2{
+    font-family: Readex Pro;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2.625rem;
+    line-height: 3.15rem;
+    margin: 5% 5%;
+}
+
+.h3{
+    font-family: "Oswald";
+    font-weight: 200;
+    font-size: 1.4rem;
+    line-height: 1.68rem;
+    text-transform: uppercase;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.h4{
+    font-family: Oswald;
+    font-size: 1.09rem;
+    line-height: 1.42rem;
+    font-weight: 500;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.h5{
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.18rem;
+    font-weight: 500;
+    margin-left: 5%;
+}
+
+.h6{
+    font-family: Oswald;
+    font-size: 1.09rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0;
+}
+
+
+.didot-font{
+    font-family: "linotype-didot", serif;
+    font-style: italic;
+}
+
+.red-font{
+    color: var(--red);
+}
+
+.blue-font{
+    color: var(--blue);
+}
+
+.white-font{
+    color: var(--white);
+}
+
+.p{
+    font-family: Readex Pro;
+    font-weight: 300;
+    font-size: 0.875rem;  
+    line-height: 1.05rem;                                                                                                                                                    
+}
+
+
+
+
+/* Buttons styling */
+
+.btn{
+    font-family: Roboto;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 39.35px;
+
+}
+
+.double-btn{
+    font-family: Roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 58.67px;
+    text-align: center;
+}
+
+.btn-dash{
+    color: var(--blue);
+    border-style: dashed;
+    border-width: 2px;
+    box-sizing: border-box;
+    background-color: var(--lightpink);
+}
+
+.btn-dash :hover{
+    border-style: var(--blue) solid;
+    cursor: pointer;
+}
+
+.btn-blue{
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.btn-blue :hover{
+    background-color: #040DA2;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-video{
+    margin-bottom: -1px;
+    margin-top: 30%;
+    width: 80vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background-color: var(--black);
+}
+
+.negativt-logo{
+    width: 8rem;
+}
+
+.a-footer{
+    color: var(--white);
+    text-align: end;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.footer-content{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+.footer-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-right: 10vw;
+}
+
+.line-under-dropdown-item-footer{
+    margin: 0; 
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white);
+    height: 2px;
+    
+}
+
+.some-icon{
+    width: 2rem;
+    padding: 15%;
+}
+
+.some-icon-section{
+    display: flex;
+    justify-content: center;
+}
+
+.a-some{
+    padding: 2%;
+}
+
+
+.st0{
+    fill: none;
+    stroke: #70F054;
+    stroke-width: 100;
+    stroke-miterlimit: 10;
+}
+
+
+
+.slange{
+    margin-top: 10%;
+}
+
+.text-slange{
+   font-size: 4rem; 
+   font-family: Readex Pro;
+   text-transform: uppercase;
+   fill: var(--blue);
+}
+
+.web-slange{
+    display: none;
+}
+
+
+text{
+    transform:translate3d(0,1.5rem,0);
+}
+
+
+.hide-mobile{
+    display: none;
+}
+
+
+
+/* Videoen */
+.video{
+    width: 60vw;
+    height: 60vw;
+    object-fit: cover;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+}
+
+
+
+/* main */
+@media screen and (min-width: 992px){
+
+    .hide-mobile{
+        display: flex;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .h1-web{
+        margin-top: 12vw;
+    }
+
+    #frogg-logo{
+        width: 12rem;
+    }
+
+    #navbar{
+        height: 140%;
+    }
+
+    .progress-bar{
+        top: 140%;
+    }
+
+    /* Navigation */
+    .ham{
+        display: none;
+    }
+
+    .navigation-menu{
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        width: 65vw;
+        top: 1vw;
+        border: none;
+        background-color: transparent;
+        z-index: 15;
+        margin-bottom: 0;
+        justify-content: space-around;
+    }
+
+    .navigation-items{
+        background-color: transparent;
+        color: var(--red);
+        font-size: 1.3rem;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-left: 0%;
+        width: 10rem;
+        /*width: 13.7rem;*/
+        margin-top: revert;
+    }
+
+    .navigations-headlines{
+        color: var(--red);
+        width: 10rem;
+    
+    }
+
+    #haekleskole:hover, .dropdown-listitems:hover, .navigations-headlines .navigation-items:hover{
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .here-are-u-nav{
+        font-weight: 400;
+        color: var(--blue);
+    }
+
+    #haekleskole {
+        padding-top: 0.7rem;
+    }
+
+    #headline-container{ 
+        display: flex;
+        padding-bottom: .3rem;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin-left: 2rem;
+        padding-top: 0.7rem;
+        height: 100%;
+    }
+
+    .line-under-dropdown-item {
+        width: 10rem;
+    }
+    
+
+    
+    .dropdown-icon{
+        /* margin-right: 2.5rem; */
+        right: 1.5rem;
+    }
+
+    .dropdown-icon span{
+        background-color: var(--red);
+    }
+
+    .dropdown-list{
+        border-style: dashed;
+        border-width: 2px;
+        border-top: none;
+        border-color: var(--red);
+        background-color: var(--lightpink);
+        flex-direction: column;
+    }
+
+
+    /* fonte */
+    
+    /* .first-h1{
+        margin-top: 35%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    } */
+
+    .frogg-text{
+        margin-right: 0% !important;
+    }
+    
+    .h1{
+        font-family: StretchedReadex;
+        font-size: 4.5rem;
+        line-height: 4.77rem;
+        margin-left: 10rem;
+        margin-right: 5%;
+        margin-bottom: 2%;
+    }
+    
+    .h2{
+        font-family: Readex Pro;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 3rem;
+        line-height: 3.6rem;
+        margin-left: 10rem;
+    }
+    
+    .h3{
+        font-family: "Oswald";
+        font-weight: 200;
+        font-size: 1.6rem;
+        line-height: 2.08rem;
+        text-transform: uppercase;
+        margin-left: 10rem;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+    
+    .h4{
+        font-family: Oswald;
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+        font-weight: 500;
+        margin-left: 10rem;
+        margin-right: 5%;
+    }
+    
+    .h5{
+        font-family: Roboto;
+        text-transform: uppercase;
+        font-size: 1.06rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        margin-left: 5%;
+    }
+    
+    .h6{
+        font-family: Oswald;
+        font-size: 1.25rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 0;
+    }
+    
+    
+
+    
+    .p{
+        font-family: Readex Pro;
+        font-weight: 300;
+        font-size: 1rem;   
+        margin-bottom: 2vw;                                                                                                                                                   
+    }
+
+
+
+
+    /* Buttons */
+
+    .btn{
+        font-family: Roboto;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.06rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 245px;
+        height: 42px;
+    
+    }
+    
+    .double-btn{
+        font-family: Roboto;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.06rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 245px;
+        height: 65px;
+        text-align: center;
+    }
+    
+    .btn-dash{
+        color: var(--blue);
+        border-style: dashed;
+        border-width: 2px;
+        box-sizing: border-box;
+        background-color: var(--lightpink);
+    }
+    
+    .btn-dash:hover{
+        border-style: solid;
+        cursor: pointer;
+    }
+    
+    .btn-blue{
+        color: var(--white);
+        background-color: var(--blue);
+    }
+    
+    .btn-blue:hover{
+        background-color: #040DA2;
+        cursor: pointer;
+    }
+
+
+
+    
+    .text-slange{
+        font-size: 1.5rem;
+        
+    }
+
+    text{
+        transform:translate3d(0,.7rem,0);
+    }
+
+    .mobile-slange{
+        display: none;
+    }
+
+    .web-slange{
+        display: unset;
+    }
+
+
+
+
+    /* Footer */
+    .footer-video{
+        margin-bottom: -1px;
+        margin-top: 5vw;
+        width: 20vw;
+        display: flex;
+        margin-left: 20rem;
+        margin-right: auto;
+    }
+    
+    footer{
+        background-color: var(--black);
+    }
+    
+    .negativt-logo{
+        width: 12rem;
+        margin-left: 10rem;
+    }
+    
+    .a-footer{
+        color: var(--white);
+        text-align: end;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .footer-content{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: space-between;
+        padding-bottom: 0%;
+        padding-top: 0%;
+    }
+    
+    .footer-text-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 10vw;
+        width: 50%;
+        align-items: center;
+    }
+    
+    .line-under-dropdown-item-footer{
+        margin: 0; 
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--white);
+        height: 2px;
+        
+    }
+    
+    .some-icon{
+        width: 2rem;
+        padding: 15%;
+    }
+    
+    .some-icon-section{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .a-some{
+        padding: 2%;
+    }
+
+
+
+    /* Videoen */
+    .video{
+        width: 20vw;
+        height: 20vw;
+        object-fit: cover;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        margin-top: 3%;
+        border: var(--red) solid 2px;
+        box-sizing: border-box;
+    }
+}

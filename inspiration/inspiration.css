@@ -1,0 +1,205 @@
+.img-div{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    width: 90vw;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.small-img-div{
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.long-img{
+    width: 90vw;
+    height: 50vw;
+    object-fit: cover;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+}
+
+.small-img{
+    width: 43vw;
+    height: 43vw;
+    object-fit: cover;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+}
+
+.img-section-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.square-text-box{
+    width: 43vw;
+    height: 43vw;
+    background-color: var(--green);
+    padding: 5%;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 5%;
+}
+
+.yellow-box{
+    background-color: var(--yellow);
+}
+
+.height-img{
+    height: 90vw;
+    width: 43vw;
+    object-fit: cover;
+    border: var(--red) solid 1px;
+    box-sizing: border-box;
+}
+
+#sommer-top-opskrift{
+    display: none;
+}
+
+.btn-container{
+    display: flex;
+    margin-left: 5%;
+    width: 80vw;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.hide-mobile-inspo{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 992px){
+    .whole-img-div{
+        display: flex;
+        flex-wrap: wrap;
+        width: 81vw;
+        margin-left: 10rem;
+        justify-content: space-between;
+    }
+
+    .img-div{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0%;
+        margin-right: 0%;
+        flex-wrap: wrap;
+        width: 40vw;
+        justify-content: space-between;
+        margin-top: 1vw;
+        align-content: space-between;
+    }
+
+    .small-img-div{
+        display: flex;
+        width: 40vw;
+        justify-content: space-between;
+        margin-top: 0%;
+    }
+    
+
+
+
+    .long-img{
+        width: 40vw;
+        height: 19.5vw;
+        border: var(--red) solid 2px;
+    }
+    
+    .small-img{
+        width: 19.5vw;
+        height: 19.5vw;
+        border: var(--red) solid 2px;
+    }
+    
+    .height-img{
+        height: 40vw;
+        width: 19.5vw;
+        object-fit: cover;
+        border: var(--red) solid 2px;
+        box-sizing: border-box;
+    }
+
+    .square-text-box{
+        width: 19.5vw;
+        height: 19.5vw;
+        padding: 5%;
+        border: var(--red) solid 2px;
+        margin: 0;
+        margin-top: 0%;
+    }
+
+    .small-img-div-vertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    #sommer-top-opskrift{
+        background-image: url("../assets/img/med_kant/Neon_haandvarmere.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--blue);
+        font-family: Roboto;
+        text-decoration: none;
+        font-size: 5rem;
+        font-weight: 500;
+    }
+
+    #sommer-top-opskrift:hover{
+        font-size: 0rem;
+    }
+
+    #sommer-top-opskrift:hover:after{
+        content: attr(data-hover);
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: var(--blue);
+        font-weight: 400;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hide-website{
+        display: none;
+    }
+   
+    .btn-container{
+        display: flex;
+        margin-left: 10rem;
+        margin-top: 2vw;
+        width: 33rem;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1890px){
+    .hide-mobile-inspo{
+        display: flex;
+    }
+}
+
+
+

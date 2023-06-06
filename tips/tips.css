@@ -1,0 +1,39 @@
+.headline-container-tips{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headline-container-tips:hover{
+    cursor: pointer;
+    background-color: var(--darkpurple);
+}
+
+.btn-garnrester{
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+
+@media screen and (min-width: 992px){
+    .tips-content{
+        width: 85vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .tips-second-div{
+        width: 40vw;
+    }
+
+    #tip1-dropdown, #tip2-dropdown{
+        margin-left: 10rem;
+        margin-right: auto;
+    }
+
+    #tip3-dropdown{
+        margin-left: unset !important;
+        margin-right: unset !important;
+    }
+}
