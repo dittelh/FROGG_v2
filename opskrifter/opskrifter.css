@@ -17,6 +17,7 @@
     margin-bottom: 20vw;
     border: var(--red) solid 1px;
     box-sizing: border-box;
+    position: relative;
 }
 
 #overflow-section{
@@ -66,6 +67,7 @@
     border-width: 1px;
     box-sizing: border-box;
     background-color: var(--lightpink);
+    position: relative;
 }
 
 .list-opskrifter{
