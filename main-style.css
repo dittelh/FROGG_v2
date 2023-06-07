@@ -638,6 +638,7 @@ text{
     margin-top: 3%;
     border: var(--red) solid 1px;
     box-sizing: border-box;
+    border: 0;
 }
 
 
