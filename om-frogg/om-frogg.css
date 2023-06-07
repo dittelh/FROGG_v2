@@ -353,7 +353,7 @@
     }
 
     .email-input{
-        height: 0vw;
+        height: 1vw;
     }
 
     .message-input{
@@ -400,4 +400,33 @@
         margin-top: -7%;
     }
 
+    .checkbox-wrapper label::before {
+        content: '';
+        background-color: var(--white);
+        border: 2px solid var(--red);
+    }
+
+    .checkbox-wrapper svg {
+        position: absolute;
+        top: calc(30% + 0%);
+        left: calc(0% + var(--border-size));
+        width: calc(var(--size) - (var(--border-size) * 2));
+        height: calc(var(--size) - (var(--border-size) * 2));
+        margin-top: calc(var(--size) / -2);
+        pointer-events: none;
+    }
+
+}
+
+
+@media screen and (min-width: 1700px){
+    .checkbox-wrapper svg {
+        position: absolute;
+        top: calc(30% + -5px);
+        left: calc(0% + var(--border-size));
+        width: calc(var(--size) - (var(--border-size) * 2));
+        height: calc(var(--size) - (var(--border-size) * 2));
+        margin-top: calc(var(--size) / -2);
+        pointer-events: none;
+    }
 }

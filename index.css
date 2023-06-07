@@ -72,10 +72,6 @@
     height: 5vw;
 }
 
-.message-input{
-    height: 65vw;
-}
-
 ::placeholder{
     opacity: 50%;
     color: var(--red);
@@ -99,7 +95,7 @@
     width: 55vw;
     display: flex;
     margin-left: 35%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-top: -35%;
 }
 
@@ -118,7 +114,7 @@
 
 .newsletter-btn{
     position: fixed;
-    top: 830px;
+    top: 90%;
     z-index: 9;
     right: 0;
     border-right: none;
@@ -336,8 +332,151 @@
 
 
 @media screen and (min-width: 992px){
+ 
+    /* Newsletter section */
 
-    /* Body */
+    .newsletter-section{
+        z-index: 12;
+        margin-top: 10vw;
+        width: 70vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        border: var(--red) solid 2px;
+        box-sizing: border-box;
+        animation: fadeInNewsletter .4s;
+    }
+    
+    @keyframes fadeInNewsletter {
+        from{
+            opacity: 0;
+        }
+    
+        to{
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeInPurple {
+        from{
+            opacity: 0;
+        }
+    
+        to{
+            opacity: .6;
+        }
+    }
+    
+    .kryds{
+        position: absolute;
+        right: 3vw;
+        margin-top: 3vw;
+    }
+    
+    .newsletter-h2{
+        margin-top: 5vw;
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
+    
+    .newsletter-p{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .newsletter-form{
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+    
+    .input{
+        border: var(--red) solid 2px;
+        color: var(--red);
+        width: 35rem;
+        margin-bottom: 2%;
+        font-family: Readex Pro;
+        padding: 1%;
+    }
+    
+    .email-input{
+        margin-bottom: 2%;
+        font-family: Readex Pro;
+        padding: 1%;
+        height: unset;
+    }
+    
+    ::placeholder{
+        opacity: 50%;
+        color: var(--red);
+        font-family: Readex Pro;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    
+    .submit-btn{
+        border: none;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1rem;
+        text-transform: uppercase;
+        width: 145px;
+        height: 34px;
+        margin-bottom: 10%;
+    }
+    
+    .newsletter-video{
+        width: 25vw;
+        display: flex;
+        margin-left: 60%;
+        margin-bottom: 2%;
+        margin-top: -45%;
+    }
+    
+    .transparent-purple-overlay{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--purple);
+        position: fixed;
+        z-index: 11;
+        opacity: 0.6;
+        top: 0;
+        animation: fadeInPurple .3s;
+    }
+    
+    .newsletter-btn{
+        position: fixed;
+        top: 85%;
+        z-index: 9;
+        right: 0;
+        border-right: none;
+        border-color: var(--blue);
+    }
+
+    .newsletter-btn:hover{
+        border-right: none;
+    }
+    
+    .hide-newsletter-btn{
+        display: none;
+    }
+    
+    .show-this{
+        display: unset;
+    }
+    
+
+
+
+
+
+    
     .first-section-span{
         display: flex;
         flex-direction: row-reverse;
