@@ -620,6 +620,13 @@ text{
 }
 
 
+/* Blyant video */
+.blyant-video{
+    width: 45vw;
+    position: absolute;
+    right: 10vw;
+}
+
 
 /* Videoen */
 .video{
@@ -972,7 +979,12 @@ text{
         padding: 2%;
     }
 
-
+    /* Blyant video */
+    .blyant-video{
+        width: 15vw;
+        position: absolute;
+        right: 50vw;
+    }
 
     /* Videoen */
     .video{
