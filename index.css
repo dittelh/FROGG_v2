@@ -38,6 +38,10 @@
     margin-top: 3vw;
 }
 
+.kryds:hover{
+    cursor: pointer;
+}
+
 .newsletter-h2{
     margin-top: 10vw;
 }
