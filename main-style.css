@@ -536,13 +536,23 @@ footer{
 
 .negativt-logo{
     width: 8rem;
+    height: 7rem;
 }
 
 .a-footer{
     color: var(--white);
     text-align: end;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: end;
+    justify-content: end;
+}
+
+.a-footer img{
+    width: 10vw;
 }
 
 .footer-content{
@@ -928,6 +938,7 @@ text{
     
     .negativt-logo{
         width: 12rem;
+        height: 11rem;
         margin-left: 10rem;
     }
     
@@ -938,6 +949,10 @@ text{
         margin-bottom: 5%;
     }
     
+    .a-footer img{
+        width: 2vw;
+    }
+
     .footer-content{
         display: flex;
         flex-direction: row;
