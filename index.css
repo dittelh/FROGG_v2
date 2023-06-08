@@ -5,7 +5,6 @@
     z-index: 12;
     margin-top: 10vw;
     width: 90vw;
-    height: 600px;
     margin-left: 5vw;
     margin-right: 5vw;
     border: var(--red) solid 1px;
@@ -344,6 +343,7 @@
         z-index: 12;
         margin-top: 10vw;
         width: 70vw;
+        height: 500px;
         margin-left: 15vw;
         margin-right: 15vw;
         border: var(--red) solid 2px;
@@ -703,4 +703,13 @@
     }
 
 
+}
+
+
+@media screen and (min-width: 1600px){
+    /* Newsletter section */
+
+    .newsletter-section{
+        height: 600px;
+    }
 }
