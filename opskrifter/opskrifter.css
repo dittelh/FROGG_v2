@@ -1,10 +1,29 @@
+/* sorting */
+
+.hide-opskrift{
+    display: none;
+}
+
+.sorting-text:hover{
+ cursor: pointer;
+}
+
+.sort-styling-text{
+    color: var(--blue);
+}
+
+
+
+
+
 .opskrifter-section{
     display: flex;
     flex-wrap: wrap;
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-around;
+    justify-content: left;
+    gap: 1.5%;
 }
 
 
@@ -160,7 +179,6 @@
         width: 85vw;
         margin-left: 10rem;
         margin-right: auto;
-        justify-content: space-between;
     }
     
 
