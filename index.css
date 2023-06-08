@@ -117,10 +117,10 @@
 }
 
 .newsletter-btn{
-    position: fixed;
+    position: sticky;
     top: 90%;
     z-index: 9;
-    right: 0;
+    left: 100vw;
     border-right: none;
     border-color: var(--blue);
 }
@@ -160,7 +160,7 @@
     width: 100vw;
     background-size: contain; 
     height: 18rem;
-    margin-top: 19%;
+    margin-top: 11%;
     display: flex;
     align-items: center;
     position: relative;
@@ -456,7 +456,7 @@
     }
     
     .newsletter-btn{
-        position: fixed;
+        position: sticky;
         top: 85%;
         z-index: 9;
         right: 0;

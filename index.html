@@ -64,161 +64,163 @@
             </div>
         </nav>
     </header>
-    <section class="newsletter-section" id="newsletter-section">
-        <img class="kryds" src="assets/img/kryds.svg" alt="kryds" onclick="toggleNewsletter()">
-        <h2 class="h2 red-font newsletter-h2">up to date med de nyeste <span class="didot-font">trends!</span></h2>
-        <p class="p newsletter-p">Tilmeld dig vores nyhedsbrev og gå aldrig glip af de fedeste nyheder, opskrifter og tips indenfor hækling! <br><br>Du kan til enhver tid afmelde dig igen.</p>
-        <form class="newsletter-form" action="newsletter.php" method="post">
-            <input class="input firstname-input" placeholder="Fornavn" required type="text" id="firstname" name="firstname">
-            <input class="input email-input" placeholder="E-mail" required type="email" id="email" name="email">
-            <button class="btn-blue submit-btn" type="submit">tilmeld</button>
-        </form>
-        <video disableRemotePlayback class="newsletter-video" autoplay loop muted playsinline>
-            <source src="../assets/animation/mail/Frogg-mail.mov" type='video/quicktime' codecs="hvc1">
-            <source src="../assets/animation/mail/Frogg-mail.webm" type="video/webm">
-        </video>
-    </section>
-    <div class="transparent-purple-overlay" id="transparent-purple-overlay"></div>
-    <button class="btn btn-dash newsletter-btn" id="newsletter-btn" onclick="toggleNewsletter()">nyhedsbrev</button>
-    <section class="first-section-span">
-        <div id="first-section-with-check">
-            <img id="first-billede" src="assets/img/med_kant/Groen_haarbaand.jpg" alt="Et hæklet grønt hårbånd">
-            <img id="smil-tegning" src="assets/img/smil-tegning.png" alt="smil tegning">
-            <img id="klistermærke-rund" src="assets/img/klistermaerke-rund.png" alt="rundt klistermærke">
-        </div>
-        <div class="first-text-span">
-            <h1 class="h1 red-font frogg-text">vi eR FrOgg</h1>
-            <h3 class="h3 red-font">Et inspirerende og mega kreativt hækleunivers, hvor vi prøver os frem og lærer hen ad vejen.</h3>
-            <div class="btn-container">
-                <a class="btn btn-dash" href="opskrifter/opskrifter.html">se opskrifter</a>
-                <a class="btn btn-blue" href="inspiration/inspiration.html">inspiration</a>
+    <main>
+        <section class="newsletter-section" id="newsletter-section">
+            <img class="kryds" src="assets/img/kryds.svg" alt="kryds" onclick="toggleNewsletter()">
+            <h2 class="h2 red-font newsletter-h2">up to date med de nyeste <span class="didot-font">trends!</span></h2>
+            <p class="p newsletter-p">Tilmeld dig vores nyhedsbrev og gå aldrig glip af de fedeste nyheder, opskrifter og tips indenfor hækling! <br><br>Du kan til enhver tid afmelde dig igen.</p>
+            <form class="newsletter-form" action="newsletter.php" method="post">
+                <input class="input firstname-input" placeholder="Fornavn" required type="text" id="firstname" name="firstname">
+                <input class="input email-input" placeholder="E-mail" required type="email" id="email" name="email">
+                <button class="btn-blue submit-btn" type="submit">tilmeld</button>
+            </form>
+            <video disableRemotePlayback class="newsletter-video" autoplay loop muted playsinline>
+                <source src="../assets/animation/mail/Frogg-mail.mov" type='video/quicktime' codecs="hvc1">
+                <source src="../assets/animation/mail/Frogg-mail.webm" type="video/webm">
+            </video>
+        </section>
+        <div class="transparent-purple-overlay" id="transparent-purple-overlay"></div>
+        <button class="btn btn-dash newsletter-btn" id="newsletter-btn" onclick="toggleNewsletter()">nyhedsbrev</button>
+        <section class="first-section-span">
+            <div id="first-section-with-check">
+                <img id="first-billede" src="assets/img/med_kant/Groen_haarbaand.jpg" alt="Et hæklet grønt hårbånd">
+                <img id="smil-tegning" src="assets/img/smil-tegning.png" alt="smil tegning">
+                <img id="klistermærke-rund" src="assets/img/klistermaerke-rund.png" alt="rundt klistermærke">
+            </div>
+            <div class="first-text-span">
+                <h1 class="h1 red-font frogg-text">vi eR FrOgg</h1>
+                <h3 class="h3 red-font">Et inspirerende og mega kreativt hækleunivers, hvor vi prøver os frem og lærer hen ad vejen.</h3>
+                <div class="btn-container">
+                    <a class="btn btn-dash" href="opskrifter/opskrifter.html">se opskrifter</a>
+                    <a class="btn btn-blue" href="inspiration/inspiration.html">inspiration</a>
+                </div>
+            </div>
+        </section>
+        <!-- https://oxygen4fun.supadezign.com/tutorials/how-to-animate-a-text-along-a-path/ (inspiration på animatiomn herfra d. 13/05/2023) -->
+        <svg class="slange " version="1.1" id="Lag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 1242 229.5" style="enable-background:new 0 0 1242 229.5;" xml:space="preserve">
+            <path id="curve" class="st0" d="M0,142.99c49,0,67.01-54.1,100.43-49.82c33.42,4.28,35.82,61.18,99.86,63.47
+            c64.03,2.28,110.18-86.63,165.08-84.99c54.9,1.64,78.24,30.02,145.03,79.9c66.79,49.88,131.67-89.61,232.46-90.34S852,118,914,130
+            c28.61,5.54,66.97,8.32,123-27c74.37-46.88,155,4,205,4"/>
+            <text text-anchor="middle">
+                <textPath class="text-slange mobile-slange" xlink:href="#curve" href="#curve">
+                    <animate attributeName="startOffset" from="100%" to="-50%" begin="0s" dur="12s" repeatCount="indefinite"></animate>
+                    try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - 
+                </textPath>
+                <textPath class="text-slange web-slange" xlink:href="#curve" href="#curve">
+                    <animate attributeName="startOffset" from="100%" to="-15%" begin="0s" dur="11s" repeatCount="indefinite"></animate>
+                    try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat -try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat -
+                </textPath>
+            </text>
+        </svg>
+        <div class="all-img-div ">
+            <div class="img-inspo-div1 img-section1">
+                <section class="purple-text-box">
+                    <h2 class="h2 red-font special-margin">lær at <span class="didot-font">hækle</span> med frogg</h2>
+                    <p class="p hide-mobile special-margin">Lad dine kreative tanker flyde frit, mens du skaber farverige bluser, bløde tørklæder eller fede tasker.</p>
+                </section>
+                <img class="square-img" src="assets/img/med_kant/Farveskiftende_haandtaske.jpg" alt="hæklet farveskiftende taske">
+                <img class="square-img" src="assets/img/med_kant/Groen_haandtaske.jpg" alt="hæklet taske">
+            </div>
+            <div class="img-inspo-div1 img-section2">
+                <img class="square-img square-item" src="assets/img/med_kant/Fiskeben_tapestry.jpg" alt="Fiskeben tapestry">
+                <img class="square-img square-item" src="assets/img/blomst-tegning.png" alt="tegning af hånd og blomst">
+                <div class="text-and-btn-container">
+                    <p class="square-text-box square-item"> <span class="p hide-mobile">Tag fat i garn, og se hvordan det forvandles til magi i dine hænder. Hækling er som at male med garn, hvor du kan skabe farverige mesterværker og opleve glæden ved at skabe noget helt specielt!
+                    </span> Den perfekte blanding af mindfulness og kreativitet, der gør at du kan skabe noget unikt med dine egne hænder.</p>
+                    <a class="btn btn-blue btn-photo-container" href="laer-at-haekle/laer-at-haekle.html">Lær at hækle</a>
+                </div>
+                <img class="square-img" src="assets/img/med_kant/Neon_haandvarmere.jpg" alt="hæklet håndvarmere">
             </div>
         </div>
-    </section>
-    <!-- https://oxygen4fun.supadezign.com/tutorials/how-to-animate-a-text-along-a-path/ (inspiration på animatiomn herfra d. 13/05/2023) -->
-    <svg class="slange " version="1.1" id="Lag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 1242 229.5" style="enable-background:new 0 0 1242 229.5;" xml:space="preserve">
-        <path id="curve" class="st0" d="M0,142.99c49,0,67.01-54.1,100.43-49.82c33.42,4.28,35.82,61.18,99.86,63.47
-        c64.03,2.28,110.18-86.63,165.08-84.99c54.9,1.64,78.24,30.02,145.03,79.9c66.79,49.88,131.67-89.61,232.46-90.34S852,118,914,130
-        c28.61,5.54,66.97,8.32,123-27c74.37-46.88,155,4,205,4"/>
-        <text text-anchor="middle">
-            <textPath class="text-slange mobile-slange" xlink:href="#curve" href="#curve">
-                <animate attributeName="startOffset" from="100%" to="-50%" begin="0s" dur="12s" repeatCount="indefinite"></animate>
-                try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - 
-            </textPath>
-            <textPath class="text-slange web-slange" xlink:href="#curve" href="#curve">
-                <animate attributeName="startOffset" from="100%" to="-15%" begin="0s" dur="11s" repeatCount="indefinite"></animate>
-                try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat -try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat - try - fail - repeat -
-            </textPath>
-        </text>
-    </svg>
-    <div class="all-img-div ">
-        <div class="img-inspo-div1 img-section1">
-            <section class="purple-text-box">
-                <h2 class="h2 red-font special-margin">lær at <span class="didot-font">hækle</span> med frogg</h2>
-                <p class="p hide-mobile special-margin">Lad dine kreative tanker flyde frit, mens du skaber farverige bluser, bløde tørklæder eller fede tasker.</p>
+        <img class="crochet-font-section" src="assets/img/crochet-font.png" alt="hæklet font">
+        <p class="h3 red-font citat-forfatter ">- VIVIENNE WESTWOOD</p>
+        <div class="text-banner-infinity ">
+            <p class="h3 red-font banner-text">farverig!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">uperfekt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">kreativt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">sjovt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">trendy!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">farverig!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">uperfekt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">kreativt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">sjovt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">trendy!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">farverig!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">uperfekt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">kreativt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">sjovt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">trendy!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">farverig!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">uperfekt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">kreativt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">sjovt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">trendy!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">farverig!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">uperfekt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">kreativt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">sjovt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">trendy!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">farverig!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">uperfekt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">kreativt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">sjovt!</p>
+            <p class="h3 red-font banner-text">-</p>
+            <p class="h3 red-font banner-text">trendy!</p>
+        </div>
+        <div class="green-opskrift-section ">
+            <section class="sommertoppen-section opskrift-section">
+                <img class="opskrift-section-img" src="assets/img/med_kant/Groen_haarbaand.jpg" alt="Hæklet grønt hårbånd">
+                <h3 class="h3 opskrift-text-headline">Grønt hårbånd</h3>
+                <p class="p">Dette hårbånd er perfekt til at tilpasse mange forskellige mønstre og personlige præferencer. Lær hvordan du kan tilpasse hårbåndet, så den bliver præcis som du ønsker.</p>
+                <a class="btn btn-blue" href="opskrifter/opskrift-nr1/opskrift-nr1.html">se opskrift</a>
             </section>
-            <img class="square-img" src="assets/img/med_kant/Farveskiftende_haandtaske.jpg" alt="hæklet farveskiftende taske">
-            <img class="square-img" src="assets/img/med_kant/Groen_haandtaske.jpg" alt="hæklet taske">
+            <section class="taske-section opskrift-section">
+                <img class="opskrift-section-img" src="assets/img/med_kant/Genbrugelig-vatrondel.jpg" alt="Hæklet vatrondel">
+                <h3 class="h3 opskrift-text-headline">Reusable “vat”rondel</h3>
+                <p class="p">Dette er en super fin vatrondel, der er både nem og bæredygtig! Den kan blive præcis som du ønsker dig, i alle farver og i alle smukke mønstre - også en perfekt morsdags-gave.</p>
+                <a class="btn btn-blue" href="opskrifter/opskrift-nr2/opskrift-nr2.html">se opskrift</a>
+            </section>
+            <section class="hat-section opskrift-section">
+                <img class="opskrift-section-img" src="assets/img/med_kant/Minion_boellehat.jpg" alt="Hæklet bøllehat">
+                <h3 class="h3 opskrift-text-headline">bøllehatten</h3>
+                <p class="p">Se lige denne fine bøllehat er perfekt til at tilpasse mange forskellige farver og mønstre. Lær hvordan du kan tilpasse bøllehatten, så den bliver præcis som du ønsker.</p>
+                <a class="btn btn-blue" href="opskrifter/opskrifter.html">se opskrift</a>
+            </section>
         </div>
-        <div class="img-inspo-div1 img-section2">
-            <img class="square-img square-item" src="assets/img/med_kant/Fiskeben_tapestry.jpg" alt="Fiskeben tapestry">
-            <img class="square-img square-item" src="assets/img/blomst-tegning.png" alt="tegning af hånd og blomst">
-            <div class="text-and-btn-container">
-                <p class="square-text-box square-item"> <span class="p hide-mobile">Tag fat i garn, og se hvordan det forvandles til magi i dine hænder. Hækling er som at male med garn, hvor du kan skabe farverige mesterværker og opleve glæden ved at skabe noget helt specielt!
-                </span> Den perfekte blanding af mindfulness og kreativitet, der gør at du kan skabe noget unikt med dine egne hænder.</p>
-                <a class="btn btn-blue btn-photo-container" href="laer-at-haekle/laer-at-haekle.html">Lær at hækle</a>
-            </div>
-            <img class="square-img" src="assets/img/med_kant/Neon_haandvarmere.jpg" alt="hæklet håndvarmere">
-        </div>
-    </div>
-    <img class="crochet-font-section" src="assets/img/crochet-font.png" alt="hæklet font">
-    <p class="h3 red-font citat-forfatter ">- VIVIENNE WESTWOOD</p>
-    <div class="text-banner-infinity ">
-        <p class="h3 red-font banner-text">farverig!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">uperfekt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">kreativt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">sjovt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">trendy!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">farverig!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">uperfekt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">kreativt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">sjovt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">trendy!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">farverig!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">uperfekt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">kreativt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">sjovt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">trendy!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">farverig!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">uperfekt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">kreativt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">sjovt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">trendy!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">farverig!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">uperfekt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">kreativt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">sjovt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">trendy!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">farverig!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">uperfekt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">kreativt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">sjovt!</p>
-        <p class="h3 red-font banner-text">-</p>
-        <p class="h3 red-font banner-text">trendy!</p>
-    </div>
-    <div class="green-opskrift-section ">
-        <section class="sommertoppen-section opskrift-section">
-            <img class="opskrift-section-img" src="assets/img/med_kant/Groen_haarbaand.jpg" alt="Hæklet grønt hårbånd">
-            <h3 class="h3 opskrift-text-headline">Grønt hårbånd</h3>
-            <p class="p">Dette hårbånd er perfekt til at tilpasse mange forskellige mønstre og personlige præferencer. Lær hvordan du kan tilpasse hårbåndet, så den bliver præcis som du ønsker.</p>
-            <a class="btn btn-blue" href="opskrifter/opskrift-nr1/opskrift-nr1.html">se opskrift</a>
-        </section>
-        <section class="taske-section opskrift-section">
-            <img class="opskrift-section-img" src="assets/img/med_kant/Genbrugelig-vatrondel.jpg" alt="Hæklet vatrondel">
-            <h3 class="h3 opskrift-text-headline">Reusable “vat”rondel</h3>
-            <p class="p">Dette er en super fin vatrondel, der er både nem og bæredygtig! Den kan blive præcis som du ønsker dig, i alle farver og i alle smukke mønstre - også en perfekt morsdags-gave.</p>
-            <a class="btn btn-blue" href="opskrifter/opskrift-nr2/opskrift-nr2.html">se opskrift</a>
-        </section>
-        <section class="hat-section opskrift-section">
-            <img class="opskrift-section-img" src="assets/img/med_kant/Minion_boellehat.jpg" alt="Hæklet bøllehat">
-            <h3 class="h3 opskrift-text-headline">bøllehatten</h3>
-            <p class="p">Se lige denne fine bøllehat er perfekt til at tilpasse mange forskellige farver og mønstre. Lær hvordan du kan tilpasse bøllehatten, så den bliver præcis som du ønsker.</p>
-            <a class="btn btn-blue" href="opskrifter/opskrifter.html">se opskrift</a>
-        </section>
-    </div>
-    <video disableRemotePlayback class="footer-video " autoplay loop muted playsinline>
-        <source src="assets/animation/footer/Footer_mand.mov" type='video/quicktime' codecs="hvc1">
-        <source src="assets/animation/footer/Footer_mand.webm" type="video/webm">
-    </video>
+        <video disableRemotePlayback class="footer-video " autoplay loop muted playsinline>
+            <source src="assets/animation/footer/Footer_mand.mov" type='video/quicktime' codecs="hvc1">
+            <source src="assets/animation/footer/Footer_mand.webm" type="video/webm">
+        </video>
+    </main>
     <footer>
         <div class="footer-content">
             <img class="negativt-logo" src="assets/img/Logo-hvid.png" alt="FROGG negativt logo">
