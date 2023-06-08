@@ -16,6 +16,7 @@ function styleSortingText(element) {
 
 function sortCategories(category, element){
     styleSortingText(element)
+    handleBackground(category)
 
     for (let i = 0; i < toej.length; i++) {
         if(!toej[i].classList.contains(category)){
@@ -50,8 +51,22 @@ function sortCategories(category, element){
     }
 }
 
+function handleBackground(category){
+    const ternSvg = document.getElementsByClassName("tern-svg")[0];
+
+    console.log(category)
+
+    if(category === "sort-bolignips" || category === "sort-garnrester"){
+        ternSvg.classList.add("hide-opskrift")
+    } else {
+        ternSvg.classList.remove("hide-opskrift")
+    }
+}
+
 function sortAll(element){
     styleSortingText(element)
+    handleBackground('')
+
 
     for (let i = 0; i < toej.length; i++) {
         toej[i].classList.remove("hide-opskrift")
