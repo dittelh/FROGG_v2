@@ -178,6 +178,9 @@
         width: 85vw;
         margin-left: 10rem;
         margin-right: auto;
+        justify-content: left;
+        gap: 1.5%;
+        
     }
     
 
